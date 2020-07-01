@@ -8,7 +8,7 @@
 |email|string|null: false|
 |password|string|null: false|
 
-### chat_groups table
+### groups table
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
