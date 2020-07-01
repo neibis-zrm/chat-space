@@ -20,3 +20,9 @@
 |image|string||
 |group_id|integer|null: false|
 |user_id|integer|null: false|
+
+### users_groups table
+|Column|Type|Options|
+|------|----|-------|
+|user_id|integer|null: false|
+|group_id|integer|null: false|
