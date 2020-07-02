@@ -1,6 +1,15 @@
 .SideBar {
-  background-color: #253141;
   width: 300px;
+  .UserInfo {
+    height: 100px;
+    width: 100%;
+    background-color: #253141;
+  }
+  .GroupList {
+    height: calc(100% - 100px);
+    background-color: #2f3e51;
+  }
   // test string
-  color: #ffffff
+  color: #ffffff;
+  text-align: center;
 }
