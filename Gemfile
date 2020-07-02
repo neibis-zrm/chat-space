@@ -55,3 +55,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # include haml-rails gem, Referenced haml-rails README.md
 gem "haml-rails", "~> 2.0"
+
+# include font-awesome-sass gem, Referenced font-awesome-sass README.md
+gem 'font-awesome-sass', '~> 5.13.0'
