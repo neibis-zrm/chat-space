@@ -1,6 +1,19 @@
 .MainChat {
-  background-color: #ffffff;
   width: calc(100vw - 300px);
+  .GroupInfo {
+    height: 100px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+  }
+  .ShowMessage {
+    height: calc(100% - 100px - 90px);
+    background-color: #fafafa;
+  }
+  .TypeForm {
+    height: 90px;
+    background-color: #d2d2d2;
+  }
   // test string
-  color: #000000
+  color: #000000;
+  text-align: center;
 }
