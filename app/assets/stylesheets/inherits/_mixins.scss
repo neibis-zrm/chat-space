@@ -1,0 +1,12 @@
+// 子要素中央揃え
+@mixin flex-center() {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+// テキスト大きさ、揃え、色変更
+@mixin text-style($size, $align, $color) {
+  color: $color;
+  font-size: $size;
+  text-align: $align;
+}

@@ -1,0 +1,100 @@
+
+// メイン画面(右側)
+.MainChat {
+  width: calc(100vw - 300px);
+}
+// グループ表示部分
+.MainChat__groupinfo {
+  background-color: #ffffff;
+  border-bottom: 1px solid #eeeeee;
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  padding: 0 $main_chat_margin_left-right;
+  &__name {
+    margin-top: 35px;
+    @include text-style(20px, left, #333333)
+  }
+  &__members {
+    margin-top: 15px;
+    @include text-style(12px, left, #999999)
+  }
+  &__edit {
+    border: 1px solid #38aef0;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 28px;
+    padding: 0 20px;
+    text-decoration: none;
+    @include text-style(16px, center, #38aef0)
+  }
+}
+// メッセージ表示部分
+.MainChat__showmessage {
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 100px - 90px);
+  padding: 35px $main_chat_margin_left-right;
+  &__user {
+    display: inline-block;
+    @include text-style(16px, left, #333333)
+  }
+  &__time {
+    display: inline-block;
+    @include text-style(12px, left, #999999)
+  }
+  &__text {
+    line-height: 60px;
+    margin-top: 12px;
+    @include text-style(14px, left, #434a54)
+  }
+}
+// フォーム入力部分
+.MainChat__typeform {
+  background-color: #d2d2d2;
+  height: 90px;
+  padding: 0 $main_chat_margin_left-right;
+  @include flex-center;
+}
+// フォーム構造
+.MainChat__format {
+  width: 100%;
+  @include flex-center;
+  &__btm {
+    padding: 0 30px;
+    margin-right: 10px;
+    line-height: 50px;
+    background-color: #38aef0;
+    @include text-style(16px, center, #ffffff);
+  }
+}
+// テキストボックス
+.MainChat__textbox {
+  height: 50px;
+  width: 100%;
+  position: relative;
+  @include flex-center;
+  &__body {
+    height: 50px;
+    margin-right: 15px;
+    padding-left: 10px;
+    text-align: left;
+    width: 100%;
+    &--image {
+      background-color: #ffffff;
+      font-size: 25px;
+      line-height: 40px;
+      margin-right: 15px;
+      position: absolute;
+      padding: 0 10px;
+      right: 2px;
+    }
+    &--file {
+      display: none;
+    }
+  }
+}
+
+

@@ -1,0 +1,45 @@
+// メイン画面(右側)
+.SideBar {
+  width: 300px;
+}
+// ユーザー情報部分
+.SideBar__userinfo {
+  background-color: #253141;
+  color: #ffffff;
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  line-height: 100px;
+  padding: 0 $side_bar_margin_left-right;
+  width: 100%;
+  &__text {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  &__edit {
+    color: #ffffff;
+    text-decoration: none;
+    &--icon {
+      margin-left: 5px;
+    }
+  }
+}
+// グループリスト表示部分
+.SideBar__grouplist {
+  background-color: #2f3e51;
+  height: calc(100% - 100px);
+  padding: 20px $side_bar_margin_left-right;
+  &__list {
+    color: #ffffff;
+    font-weight: bold;
+    padding-bottom: 40px;
+    text-align: left;
+    &__name {
+      font-size: 15px;
+      margin-bottom: 5px;
+    }
+    &__latest {
+      font-size: 11px;
+    }  
+  }
+}

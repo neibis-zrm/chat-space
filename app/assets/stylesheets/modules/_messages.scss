@@ -1,0 +1,12 @@
+@import "main_chat";
+@import "side_bar";
+
+* {
+  box-sizing: border-box;
+}
+
+.Messages {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
