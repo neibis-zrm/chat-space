@@ -10,8 +10,14 @@
         = icon('fas','cog', class: "SideBar__userinfo__edit--icon")
         %span<>
   .SideBar__grouplist
-    %ul<>
-      .SideBar__grouplist--name
-        <グループリスト>
-      .SideBar__grouplist--latest
-        メッセージ
+    %ul
+      %li.SideBar__grouplist__list<>
+        .SideBar__grouplist__list__name
+          <グループリスト>
+        .SideBar__grouplist__list__latest
+          メッセージ
+      %li.SideBar__grouplist__list<>
+        .SideBar__grouplist__list__name
+          <グループリスト>
+        .SideBar__grouplist__list__latest
+          メッセージ
