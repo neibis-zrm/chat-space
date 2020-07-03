@@ -1,7 +1,11 @@
 .MainChat
   .MainChat__groupinfo
-    -# test string
-    <グループ表示>
+    .MainChat__groupinfo__name
+      <グループ表示>
+      .MainChat__groupinfo__members
+        Member:aaaaaa
+    = link_to "#", class: "MainChat__groupinfo__edit" do
+      Edit
   .MainChat__showmessage
     -# test string
     <チャット画面>
