@@ -1,7 +1,17 @@
-.Sidebar
-  .Sidebar__userinfo
-    -# test string
-    <ログインユーザー>
-  .Sidebar__grouplist
-    -# test string
-    <グループリスト>
+.SideBar
+  .SideBar__userinfo
+    .SideBar__userinfo__text
+      <ログインユーザー>
+    .SideBar__userinfo__edit
+      = link_to "#", class: "SideBar__userinfo__edit" do
+        = icon('fas','edit', class: "SideBar__userinfo__edit--icon")
+        %span<>
+      = link_to "#", class: "SideBar__userinfo__edit" do
+        = icon('fas','cog', class: "SideBar__userinfo__edit--icon")
+        %span<>
+  .SideBar__grouplist
+    %ul<>
+      .SideBar__grouplist--name
+        <グループリスト>
+      .SideBar__grouplist--latest
+        メッセージ

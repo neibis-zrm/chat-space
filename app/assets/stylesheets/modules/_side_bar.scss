@@ -1,15 +1,40 @@
-.Sidebar {
+.SideBar {
   width: 300px;
-  .Sidebar__userinfo {
+  .SideBar__userinfo {
     height: 100px;
     width: 100%;
     background-color: #253141;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    line-height: 100px;
+    color: #ffffff;
+    &__text {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    &__edit {
+      text-decoration: none;
+      color: #ffffff;
+      &--icon {
+        margin-left: 5px;
+      }
+    }
   }
-  .Sidebar__grouplist {
+  .SideBar__grouplist {
     height: calc(100% - 100px);
     background-color: #2f3e51;
+    padding: 20px 20px 40px 20px;
+    color: #ffffff;
+    text-align: left;
+    &--name {
+      font-size: 15px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    &--latest {
+      font-size: 11px;
+      font-weight: bold;
+    }
   }
-  // test string
-  color: #ffffff;
-  text-align: center;
 }
