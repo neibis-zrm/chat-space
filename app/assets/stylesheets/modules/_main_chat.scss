@@ -35,6 +35,28 @@
   .MainChat__showmessage {
     height: calc(100% - 100px - 90px);
     background-color: #fafafa;
+    padding: 35px 40px;
+    display: flex;
+    flex-direction: column;
+    &__user {
+      display: inline-block;
+      justify-content: left;
+      color: #333333;
+      font-size: 16px;
+      text-align: left;
+    }
+    &__time {
+      display: inline-block;
+      color: #999999;
+      font-size: 12px;
+    }
+    &__text {
+      color: #434a54;
+      font-size: 14px;
+      line-height: 60px;
+      text-align: left;
+      margin-top: 12px;
+    }
   }
   .MainChat__typeform {
     height: 90px;
