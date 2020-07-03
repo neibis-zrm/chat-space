@@ -7,18 +7,26 @@
     = link_to "#", class: "MainChat__groupinfo__edit" do
       Edit
   .MainChat__showmessage
-    .MainChat__showmessage__user
-      ユーザー
-      .MainChat__showmessage__time
-        yyyy/MM/dd(Sun) mm:hh:ss
-    .MainChat__showmessage__text
-      メッセージ
-    .MainChat__showmessage__user
-      ユーザー
-      .MainChat__showmessage__time
-        yyyy/MM/dd(Sun) mm:hh:ss
-    .MainChat__showmessage__text
-      メッセージ
+    %ul
+      %li<>
+        .MainChat__showmessage__user
+          ユーザー
+          .MainChat__showmessage__time
+            yyyy/MM/dd(Sun) mm:hh:ss
+        .MainChat__showmessage__text
+          メッセージ
+        .MainChat__showmessage__user
+          ユーザー
+          .MainChat__showmessage__time
+            yyyy/MM/dd(Sun) mm:hh:ss
+        .MainChat__showmessage__text
+          メッセージ
   .MainChat__typeform
-    -# test string
-    <フォーム>
+    = form_with url: @messages, local: true, class: "MainChat__format" do |form|
+      .MainChat__textbox
+        = form.text_field :body, placeholder: "type a message", class: "MainChat__textbox__body"
+        = form.label :image ,class: "MainChat__textbox__body--image" do
+          = icon('far', 'image')
+          = form.file_field :image, class: "MainChat__textbox__body--file"
+      = form.submit "Send", class: "MainChat__format__btm"
+    

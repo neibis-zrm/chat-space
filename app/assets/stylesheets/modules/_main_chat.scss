@@ -61,6 +61,48 @@
   .MainChat__typeform {
     height: 90px;
     background-color: #d2d2d2;
+    padding: 0 50px 0 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  text-align: center;
+  .MainChat__format {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__btm {
+      text-align: center;
+      padding: 0 30px;
+      line-height: 50px;
+      color: #ffffff;
+      font-size: 16px;
+      background-color: #38aef0
+    }
+  }
+  .MainChat__textbox {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &__body {
+      height: 50px;
+      width: 100%;
+      padding-left: 10px;
+      margin-right: 15px;
+      text-align: left;
+      &--image {
+        position: absolute;
+        font-size: 25px;
+        line-height: 50px;
+        margin-right: 15px;
+        right: 10px;
+      }
+      &--file {
+        display: none;
+      }
+    }
+  }
 }
