@@ -58,3 +58,6 @@ gem "haml-rails", "~> 2.0"
 
 # include font-awesome-sass gem, Referenced font-awesome-sass README.md
 gem 'font-awesome-sass', '~> 5.13.0'
+
+# include devise gem
+gem 'devise'
