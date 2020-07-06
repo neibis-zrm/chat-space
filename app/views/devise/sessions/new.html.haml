@@ -4,7 +4,7 @@
     %h5 登録しているユーザーでログイン
     = render "devise/shared/links"
   .AccountPage__form
-    = form_for(resource, as: resource_name, url: user_session_path(resource_name)) do |f|
+    = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
       .FormField
         .FormField__label--normal
           = f.label :email
