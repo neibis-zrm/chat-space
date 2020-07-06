@@ -3,7 +3,7 @@
     %h3.SideBar__userinfo__text
       = current_user.name
     .SideBar__userinfo__edit
-      = link_to "#", class: "SideBar__userinfo__edit" do
+      = link_to new_group_path, class: "SideBar__userinfo__edit" do
         = icon('fas','edit', class: "SideBar__userinfo__edit--icon")
         %span<>
       = link_to edit_user_path(current_user), class: "SideBar__userinfo__edit" do
