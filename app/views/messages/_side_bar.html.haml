@@ -1,12 +1,12 @@
 .SideBar
   .SideBar__userinfo
-    .SideBar__userinfo__text
-      <ログインユーザー>
+    %h3.SideBar__userinfo__text
+      = current_user.name
     .SideBar__userinfo__edit
       = link_to "#", class: "SideBar__userinfo__edit" do
         = icon('fas','edit', class: "SideBar__userinfo__edit--icon")
         %span<>
-      = link_to "#", class: "SideBar__userinfo__edit" do
+      = link_to edit_user_path(current_user), class: "SideBar__userinfo__edit" do
         = icon('fas','cog', class: "SideBar__userinfo__edit--icon")
         %span<>
   .SideBar__grouplist
