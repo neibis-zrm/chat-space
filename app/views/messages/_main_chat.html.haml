@@ -8,7 +8,6 @@
       Edit
   .MainChat__showmessage
     = render partial: "message", collection: @messages
-    -# = render @messgaes
   .MainChat__typeform
     = form_with model: [@group, @message], local: true, class: "MainChat__format" do |form|
       .MainChat__textbox

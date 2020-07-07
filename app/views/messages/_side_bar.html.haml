@@ -17,9 +17,4 @@
             .SideBar__grouplist__list__name
               = usergroup.name
             .SideBar__grouplist__list__latest
-              メッセージ
-        -# %li.SideBar__grouplist__list<>
-        -#   .SideBar__grouplist__list__name
-        -#     <グループリスト>
-        -#   .SideBar__grouplist__list__latest
-        -#     メッセージ
+              = usergroup.show_last_message
