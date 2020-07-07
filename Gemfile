@@ -64,3 +64,7 @@ gem 'devise'
 
 # include pry-rails gem
 gem 'pry-rails'
+
+# include carrierwave gem, Referenced carrierwave README.md
+gem 'mini_magick'
+gem 'carrierwave', '~> 2.0'
