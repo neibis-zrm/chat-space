@@ -36,17 +36,26 @@
   display: flex;
   flex-direction: column;
   height: calc(100% - 100px - 90px);
-  padding: 35px $main_chat_margin_left-right;
+  padding: 35px $main_chat_margin_left-right 0;
   &__user {
     display: inline-block;
-    @include text-style(16px, left, #333333)
+    @include text-style(16px, left, #333333);
+
+    // 位置調整
+    position: relative;
   }
   &__time {
     display: inline-block;
-    @include text-style(12px, left, #999999)
+    @include text-style(12px, left, #999999);
+    
+    // 位置調整
+    padding: 0 0 0 8px;
+    white-space: nowrap;
+    position: absolute;
+    bottom: 5px;
   }
   &__text {
-    line-height: 60px;
+    height: 60px;
     margin-top: 12px;
     @include text-style(14px, left, #434a54)
   }

@@ -1,32 +1,19 @@
 .MainChat
   .MainChat__groupinfo
     .MainChat__groupinfo__name
-      <グループ表示>
+      = @group.name
       .MainChat__groupinfo__members
         Member:aaaaaa
     = link_to "#", class: "MainChat__groupinfo__edit" do
       Edit
   .MainChat__showmessage
-    %ul
-      %li<>
-        .MainChat__showmessage__user
-          ユーザー
-          .MainChat__showmessage__time
-            yyyy/MM/dd(Sun) mm:hh:ss
-        .MainChat__showmessage__text
-          メッセージ
-        .MainChat__showmessage__user
-          ユーザー
-          .MainChat__showmessage__time
-            yyyy/MM/dd(Sun) mm:hh:ss
-        .MainChat__showmessage__text
-          メッセージ
+    = render partial: "message", collection: @messages
+    -# = render @messgaes
   .MainChat__typeform
-    = form_with url: @messages, local: true, class: "MainChat__format" do |form|
+    = form_with model: [@group, @message], local: true, class: "MainChat__format" do |form|
       .MainChat__textbox
         = form.text_field :body, placeholder: "type a message", class: "MainChat__textbox__body"
         = form.label :image ,class: "MainChat__textbox__body--image" do
           = icon('far', 'image')
           = form.file_field :image, class: "MainChat__textbox__body--file"
       = form.submit "Send", class: "MainChat__format__btm"
-    

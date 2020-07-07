@@ -1,0 +1,8 @@
+%ul
+  %li<>
+    .MainChat__showmessage__user
+      = message.user.name
+      .MainChat__showmessage__time
+        = message.created_at.strftime("%Y/%m/%d(%a) %H:%M:%S")
+    .MainChat__showmessage__text
+      = message.body

@@ -13,10 +13,11 @@
     %ul
       - current_user.groups.each do |usergroup|
         %li.SideBar__grouplist__list<>
-          .SideBar__grouplist__list__name
-            = usergroup.name
-          .SideBar__grouplist__list__latest
-            メッセージ
+          = link_to group_messages_path(usergroup), class: "SideBar__grouplist__list" do
+            .SideBar__grouplist__list__name
+              = usergroup.name
+            .SideBar__grouplist__list__latest
+              メッセージ
         -# %li.SideBar__grouplist__list<>
         -#   .SideBar__grouplist__list__name
         -#     <グループリスト>
