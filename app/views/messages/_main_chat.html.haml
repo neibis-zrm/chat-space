@@ -3,8 +3,8 @@
     .MainChat__groupinfo__name
       = @group.name
       .MainChat__groupinfo__members
-        Member:aaaaaa
-    = link_to "#", class: "MainChat__groupinfo__edit" do
+        = "Member: #{@group.user_list_message}"
+    = link_to edit_group_path(@group.id), class: "MainChat__groupinfo__edit" do
       Edit
   .MainChat__showmessage
     = render partial: "message", collection: @messages
@@ -16,3 +16,4 @@
           = icon('far', 'image')
           = form.file_field :image, class: "MainChat__textbox__body--file"
       = form.submit "Send", class: "MainChat__format__btm"
+  
