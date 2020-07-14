@@ -36,6 +36,7 @@
   display: flex;
   flex-direction: column;
   height: calc(100% - 100px - 90px);
+  overflow: scroll;
   padding: 35px $main_chat_margin_left-right 0;
   &__user {
     display: inline-block;

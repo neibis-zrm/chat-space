@@ -8,6 +8,7 @@ $(function(){
                         <div class="MainChat__showmessage__time">
                           ${message.create_at}
                         </div>
+                      </div>
                       <div class="MainChat__showmessage__text">
                         ${message.body}
                         <img class="MainChat__showmessage__image" src="${message.image}">
@@ -23,6 +24,7 @@ $(function(){
                         <div class="MainChat__showmessage__time">
                           ${message.create_at}
                         </div>
+                      </div>
                       <div class="MainChat__showmessage__text">
                         ${message.body}
                       </div>
