@@ -3,6 +3,8 @@ class UsersController < ApplicationController
   before_action :redirect_no_user
 
   def index
+    return nil if params[:keyword] == ""
+    @users = User.search(params[:keyword], current_user.id)
     respond_to do |format|
       format.html
       format.json
