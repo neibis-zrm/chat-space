@@ -2,6 +2,13 @@ class UsersController < ApplicationController
 
   before_action :redirect_no_user
 
+  def index
+    respond_to do |format|
+      format.html
+      format.json
+    end
+  end
+
   def edit
   end
 
