@@ -1,17 +1,20 @@
 $(function(){
+
   function buildHTML(message){
     if (message.image) {
       let html = `<ul>
                     <li>
-                      <div class="MainChat__showmessage__user">
-                        ${message.user_name}
-                        <div class="MainChat__showmessage__time">
-                          ${message.create_at}
+                      <div class="MainChat__showmessage__box" data-message-id="${message.id}">
+                        <div class="MainChat__showmessage__user">
+                          ${message.user_name}
+                          <div class="MainChat__showmessage__time">
+                            ${message.create_at}
+                          </div>
                         </div>
-                      </div>
-                      <div class="MainChat__showmessage__text">
-                        ${message.body}
-                        <img class="MainChat__showmessage__image" src="${message.image}">
+                        <div class="MainChat__showmessage__text">
+                          ${message.body}
+                          <img class="MainChat__showmessage__image" src="${message.image}">
+                        </div>
                       </div>
                     </li>
                   </ul>`
@@ -19,14 +22,16 @@ $(function(){
     } else {
       let html = `<ul>
                     <li>
-                      <div class="MainChat__showmessage__user">
-                        ${message.user_name}
-                        <div class="MainChat__showmessage__time">
-                          ${message.create_at}
+                      <div class="MainChat__showmessage__box" data-message-id="${message.id}">
+                        <div class="MainChat__showmessage__user">
+                          ${message.user_name}
+                          <div class="MainChat__showmessage__time">
+                            ${message.create_at}
+                          </div>
                         </div>
-                      </div>
-                      <div class="MainChat__showmessage__text">
-                        ${message.body}
+                        <div class="MainChat__showmessage__text">
+                          ${message.body}
+                        </div>
                       </div>
                     </li>
                   </ul>`

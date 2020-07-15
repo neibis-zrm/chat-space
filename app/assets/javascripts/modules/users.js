@@ -58,7 +58,7 @@ $(function(){
   })
 
   //ユーザーの追加
-  $("#UserSearchResult").on('click', $(".ChatMember__add"), function(){
+  $("#UserSearchResult").on('click', ".ChatMember__add", function(){
     let selectData = $(".ChatMember__add");
     const selectUser = selectData.data("user-name");
     const selectId = selectData.data("user-id");
