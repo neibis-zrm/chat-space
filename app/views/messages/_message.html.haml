@@ -1,12 +1,13 @@
 %ul
   %li<>
-    .MainChat__showmessage__user
-      = message.user.name
-      .MainChat__showmessage__time
-        = message.created_at.strftime("%Y/%m/%d(%a) %H:%M:%S")
-    .MainChat__showmessage__text
-      - if message.body.present?
-        -# メッセージ
-        = message.body
-      -# 画像
-      = image_tag message.image.url, class: 'MainChat__showmessage__image' if message.image.present?
+    .Message_showmessage_box{data: {message:{id: message.id}}}
+      .MainChat__showmessage__user
+        = message.user.name
+        .MainChat__showmessage__time
+          = message.created_at.strftime("%Y/%m/%d(%a) %H:%M:%S")
+      .MainChat__showmessage__text
+        - if message.body.present?
+          -# メッセージ
+          = message.body
+        -# 画像
+        = image_tag message.image.url, class: 'MainChat__showmessage__image' if message.image.present?
