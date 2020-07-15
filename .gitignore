@@ -32,3 +32,4 @@ yarn-debug.log*
 
 # Add Ignore File
 public/uploads/*
+public/images
