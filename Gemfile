@@ -71,3 +71,7 @@ gem 'carrierwave', '~> 2.0'
 
 #include jQuery gem
 gem 'jquery-rails'
+
+group :production do
+  gem 'unicorn', '5.4.1'
+end
