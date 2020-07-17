@@ -74,7 +74,10 @@ gem 'pry-rails'
 gem 'mini_magick'
 gem 'carrierwave', '~> 2.0'
 
-#include jQuery gem
+# include fog gem
+gem 'fog-aws' 
+
+# include jQuery gem
 gem 'jquery-rails'
 
 group :production do
