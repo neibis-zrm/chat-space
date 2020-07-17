@@ -1,43 +1,41 @@
 $(function(){
   function buildHTML(message){
-    if ( message.image ) {
-      let html =
-        `<div class="MessageBox" data-message-id=${message.id}>
-          <div class="MessageInfo">
-            <div class="MessageInfo__userName">
-              ${message.user_name}
-            </div>
-            <div class="MessageInfo__date">
-              ${message.created_at}
-            </div>
-          </div>
-          <div class="Message">
-            <p class="Message__content">
-              ${message.content}
-            </p>
-            <img class="Message__image" src="${message.image}">
-          </div>
-        </div>`
+    if (message.image) {
+      let html = `<ul>
+                    <li>
+                      <div class="MainChat__showmessage__box" data-message-id="${message.id}">
+                        <div class="MainChat__showmessage__user">
+                          ${message.user_name}
+                          <div class="MainChat__showmessage__time">
+                            ${message.create_at}
+                          </div>
+                        </div>
+                        <div class="MainChat__showmessage__text">
+                          ${message.body}
+                          <img class="MainChat__showmessage__image" src="${message.image}">
+                        </div>
+                      </div>
+                    </li>
+                  </ul>`
       return html;
     } else {
-      let html =
-      `<div class="MessageBox" data-message-id=${message.id}>
-        <div class="MessageInfo">
-          <div class="MessageInfo__userName">
-            ${message.user_name}
-          </div>
-          <div class="MessageInfo__date">
-            ${message.created_at}
-          </div>
-        </div>
-        <div class="Message">
-          <p class="Message__content">
-            ${message.content}
-          </p>
-        </div>
-      </div>`
+      let html = `<ul>
+                    <li>
+                      <div class="MainChat__showmessage__box" data-message-id="${message.id}">
+                        <div class="MainChat__showmessage__user">
+                          ${message.user_name}
+                          <div class="MainChat__showmessage__time">
+                            ${message.create_at}
+                          </div>
+                        </div>
+                        <div class="MainChat__showmessage__text">
+                          ${message.body}
+                        </div>
+                      </div>
+                    </li>
+                  </ul>`
       return html;
-    };
+    }
   }
 
   let reloadMessages = function() {
