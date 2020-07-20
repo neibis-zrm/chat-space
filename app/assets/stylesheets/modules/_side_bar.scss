@@ -29,6 +29,7 @@
   background-color: #2f3e51;
   height: calc(100% - 100px);
   padding: 20px $side_bar_margin_left-right;
+  overflow: scroll;
   &__list {
     color: #ffffff;
     font-weight: bold;
