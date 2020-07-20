@@ -60,6 +60,11 @@
     margin-top: 12px;
     @include text-style(14px, left, #434a54)
   }
+  &__image {
+    display: block;
+    height: auto;
+    margin: 10px 0;
+  }
 }
 // フォーム入力部分
 .MainChat__typeform {
