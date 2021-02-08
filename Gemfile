@@ -72,7 +72,7 @@ gem 'pry-rails'
 
 # include carrierwave gem, Referenced carrierwave README.md
 gem 'mini_magick'
-gem 'carrierwave', '~> 2.0'
+gem 'carrierwave', '~> 2.1'
 
 # include fog gem
 gem 'fog-aws' 
